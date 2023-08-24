@@ -1,10 +1,9 @@
-/* Import the roboto font */
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500");
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
 
 /* Give the body a default font family */
 body {
   background-color: var(--color-primary);
-  font-family: "Roboto", sans-serif;
+  font-family: "Merriweather", sans-serif;
 }
 
 /* Define the next variables in the root */
@@ -27,12 +26,15 @@ h1 {
   font-size: 4rem;
   text-align: center;
   color: var(--color-primary);
+  letter-spacing: 0.1em;
+  font-weight: bolder;
 }
 
 h1 span {
   display: inline-block;
   animation: letter-appear 0.5s ease-in-out forwards;
   transform: translateY(-100%);
+  font-weight: inherit;
 }
 
 @keyframes letter-appear {
