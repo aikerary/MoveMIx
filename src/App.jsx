@@ -1,10 +1,12 @@
 import logo from './logo.svg';
 import './css/App.css';
+import Dashboard from './Dashboard';
 // Import please the useEffect and useState hooks from React, also fragment
-import React, { useEffect, useState, Fragment } from 'react';
+import React, { Fragment, useEffect, useState} from 'react';
 
 function App() {
   return (
+    <Fragment>
     <header>
       <h1>
         {Array.from("Movemix").map((letter, index) => (
@@ -12,6 +14,8 @@ function App() {
         ))}
       </h1>
     </header>
+   <div><Dashboard /></div>
+    </Fragment>
   );
 }
 
