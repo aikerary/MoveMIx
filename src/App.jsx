@@ -5,11 +5,9 @@ import React, { useEffect, useState, Fragment } from 'react';
 
 function App() {
   return (
-    // Create a fragment
-    <Fragment>
-      <h1>React Hooks</h1>
-      <p>UseEffect and useState</p>
-    </Fragment>
+    <header>
+      <h1>Movemix</h1>
+    </header>
   );
 }
 
