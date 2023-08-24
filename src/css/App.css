@@ -1,16 +1,50 @@
 /* Import the roboto font */
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500");
 
 /* Give the body a default font family */
 body {
   background-color: var(--color-primary);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* Define the next variables in the root */
 :root {
   --color-primary: #071952;
-  --color-secondary: #0B666A;
-  --color-tertiary: #35A29F;
-  --color-quaternary: #97FEED;
+  --color-secondary: #0b666a;
+  --color-tertiary: #35a29f;
+  --color-quaternary: #97feed;
+}
+
+h1 {
+  font-size: 3rem;
+  animation: enter 1s ease-in-out forwards;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+@keyframes enter {
+  from {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+h1 span {
+  display: inline-block;
+  animation: letter-appear 0.5s ease-in-out forwards;
+}
+
+@keyframes letter-appear {
+  from {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
