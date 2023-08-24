@@ -6,7 +6,11 @@ import React, { useEffect, useState, Fragment } from 'react';
 function App() {
   return (
     <header>
-      <h1>Movemix</h1>
+      <h1>
+        {Array.from("Movemix").map((letter, index) => (
+          <span key={index}>{letter}</span>
+        ))}
+      </h1>
     </header>
   );
 }
