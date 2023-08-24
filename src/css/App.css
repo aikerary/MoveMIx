@@ -1,17 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
-
+/* Import Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 /* Give the body a default font family */
 body {
   background-color: var(--color-primary);
-  font-family: "Merriweather", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* Define the next variables in the root */
 :root {
-  --color-primary: #071952;
-  --color-secondary: #0b666a;
-  --color-tertiary: #35a29f;
-  --color-quaternary: #97feed;
+  --color-primary: #1B262C;
+  --color-secondary: #0F4C75;
+  --color-tertiary: #3282B8;
+  --color-quaternary: #BBE1FA;
 }
 
 header {
